@@ -2,7 +2,7 @@
 
 FontAwesome.pri bundle FontAwesome font and icon table into a single module for QML project.
 
-Features
+## Features
 
 --------
 
@@ -10,7 +10,7 @@ Features
  2. Work well with Qt Quick Designer. Able to show icons in "Design" mode
  3. Auto-completion of icon name works in Qt Creator.
 
-Example
+## Example
 
 --------
 
@@ -28,7 +28,7 @@ Text {
  
 ![Screenshot](https://raw.githubusercontent.com/benlau/fontawesome.pri/master/docs/designmode.png)
 
-Installation
+## Installation
 
 --------
 
@@ -40,26 +40,28 @@ Add "qrc://" to your QML import path
 
     engine.addImportPath("qrc:///"); // QQmlEngine
 
-API
+## API
 
 --------
 
-## FontAwesome
+### FontAwesome
 
 FontAwesome is a singleton object. 
 Once it is referred in your code, it will load the font into memory. 
 Then it will be available for all other components.
 Therefore, it is recommended to refer it to main.qml.
 
-## FontAwesome.fontAwesomeFreeSolid
+### Font Families
 
-## FontAwesome.fontAwesomeBrandsRegular
-
-## FontAwesome.fontAwesomeFreeRegular
+1. FontAwesome.fontAwesomeFreeSolid
+2. FontAwesome.fontAwesomeBrandsRegular
+3. FontAwesome.fontAwesomeFreeRegular
 
 They hold the font names, as, from Font Awesome version 5, fonts separated. You may pass them to the `font.family` in a Text component
 
-## Icons Table
+### Icons Table
 
 Moreover, FontAwesome object also holds an icon table. You can get needed icon by calling  `FontAwesome.icon.{ICON_NAME}`
 For complete icon list, please check the source of [FontAwesome.qml](https://github.com/benlau/fontawesome.pri/blob/master/FontAwesome/FontAwesome.qml) file, or go to [Font Awesome website](https://fontawesome.com/icons) to find an icon.
+
+--------
