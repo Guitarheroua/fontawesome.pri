@@ -4,15 +4,11 @@ FontAwesome.pri bundle FontAwesome font and icon table into a single module for 
 
 ## Features
 
---------
-
  1. Installable by qpm
  2. Work well with Qt Quick Designer. Able to show icons in "Design" mode
  3. Auto-completion of icon name works in Qt Creator.
 
 ## Example
-
---------
 
  ```qml
 import QtQuick 2.12
@@ -25,12 +21,9 @@ Text {
 }
 ```
 
- 
 ![Screenshot](https://raw.githubusercontent.com/benlau/fontawesome.pri/master/docs/designmode.png)
 
 ## Installation
-
---------
 
 Install FontAwesome.pri by qpm:
 
@@ -41,8 +34,6 @@ Add "qrc://" to your QML import path
     engine.addImportPath("qrc:///"); // QQmlEngine
 
 ## API
-
---------
 
 ### FontAwesome
 
