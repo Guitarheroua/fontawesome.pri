@@ -53,6 +53,6 @@ They hold the font names, as, from Font Awesome version 5, fonts separated. You 
 ### Icons Table
 
 Moreover, FontAwesome object also holds an icon table. You can get needed icon by calling  `FontAwesome.icon.{ICON_NAME}`
-For complete icon list, please check the source of [FontAwesome.qml](https://github.com/benlau/fontawesome.pri/blob/master/FontAwesome/FontAwesome.qml) file, or go to [Font Awesome website](https://fontawesome.com/icons) to find an icon.
+For complete icon list, please check the source of [FontAwesome.qml](./FontAwesome/FontAwesome.qml) file, or go to [Font Awesome website](https://fontawesome.com/icons) to find an icon.
 
 --------
