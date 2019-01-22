@@ -1,4 +1,5 @@
 pragma Singleton
+import QtQml 2.12
 import QtQuick 2.12
 
 Object {
@@ -7,6 +8,10 @@ Object {
     readonly property alias fontAwesomeFreeSolid: fontAwesomeFreeSolidLoader.name
     readonly property alias fontAwesomeBrandsRegular: fontAwesomeBrandsRegularLoader.name
     readonly property alias fontAwesomeFreeRegular: fontAwesomeFreeRegularLoader.name
+
+    readonly property string fontAwesomeStyleNameSolid: Qt.platform.os === "osx" ? "Solid" : ""
+    readonly property string fontAwesomeStyleNameRegular: Qt.platform.os === "osx" ? "Regular" : ""
+    readonly property string fontAwesomeStyleNameBrandsRegular: Qt.platform.os === "osx" ? "Brands Regular" : ""
 
     readonly property alias icon: iconsObject
 
